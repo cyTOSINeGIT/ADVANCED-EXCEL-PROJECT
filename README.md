@@ -1,4 +1,4 @@
-## Project Overview
+## Stream Wave Project Overview
 
 This project **focused on analysing streaming content engagement and subscriber retention using Excel**. The analysis **examined** viewing behaviour across different genres to understand which types of content **generated** the highest engagement, repeat viewership, and subscriber retention.
 
