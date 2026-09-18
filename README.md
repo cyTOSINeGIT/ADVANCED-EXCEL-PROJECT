@@ -11,7 +11,7 @@ Create response and resolution time measures
 Add useful agent and client information
 Analyse SLA performance and operational workload
 Establish baseline findings for the later SQL and Power BI stages
-Power Query — Data Cleaning & Validation
+Power Query - Data Cleaning & Validation
 
 **Power Query was used to clean and validate the Tickets dataset.**
 
@@ -45,10 +45,10 @@ The cleaned data was then explored in Excel to establish baseline operational in
 Total tickets: 3,500
 SLA breaches: 754
 Overall SLA breach rate: 21.54%
-Highest priority breach rate: P1 — 28.68%
-Highest category breach rate: Category 5 — 24.34%
-Highest channel breach rate: Phone — 23.87%
-Highest status breach rate: Escalated — 47.37%
+Highest priority breach rate: P1 - 28.68%
+Highest category breach rate: Category 5 - 24.34%
+Highest channel breach rate: Phone - 23.87%
+Highest status breach rate: Escalated - 47.37%
 Response & Resolution
 Average response time: 5.06 hours
 P1 average response time: 1.18 hours
@@ -65,8 +65,8 @@ The workload-pressure calculation was treated as an indicator rather than true d
 
 The analysis also examined workload by hub and client-level SLA performance.
 
-Highest hub workload: Manchester — 1,346 tickets
-Highest identified client SLA breach rate: Marshfield Health Associates — 33.33%
+Highest hub workload: Manchester - 1,346 tickets
+Highest identified client SLA breach rate: Marshfield Health Associates - 33.33%
 Excel Techniques Used
 
 The analysis used:
@@ -86,13 +86,13 @@ Raw Healthcare Data
         ↓
 Excel
         ↓
-Power Query — Cleaning & Validation
+Power Query - Cleaning & Validation
         ↓
-Excel — Exploratory Analysis
+Excel - Exploratory Analysis
         ↓
 SQL
         ↓
-Power BI — 9 Interactive Dashboards
+Power BI - 9 Interactive Dashboards
 Tools Used
 
 Excel | Power Query
