@@ -1,3 +1,106 @@
+## NorthBridge Healthcare Operations - Excel & Power Query
+
+This project documents the Excel and Power Query stage of the NorthBridge healthcare operations analytics project.
+
+The work began with the raw healthcare service-ticket dataset and focused on cleaning, validating and exploring the data before it was taken into SQL and Power BI. The final cleaned dataset contained 3,500 tickets and was loaded back into Excel as Tickets_Clean.
+
+## Project Objectives
+Clean and standardise the raw ticket data
+Validate data quality and consistency
+Create response and resolution time measures
+Add useful agent and client information
+Analyse SLA performance and operational workload
+Establish baseline findings for the later SQL and Power BI stages
+Power Query — Data Cleaning & Validation
+
+**Power Query was used to clean and validate the Tickets dataset.**
+
+Key checks included:
+
+Duplicate TicketID and TicketReference checks
+Missing-value checks for key fields
+Data-type validation
+SLA breach value validation
+Response, resolution and SLA due-date checks
+SLA breach logic validation
+
+No duplicate TicketIDs or TicketReferences were found, and no missing values were identified in the main required fields. Timestamp and SLA checks also returned no errors.
+
+Expected blanks in FirstResponseAt and ResolvedAt were retained as nulls for open tickets rather than being converted to zero.
+
+**Calculated Fields**
+
+Power Query was also used to create:
+
+ResponseTimeHours
+ResolutionTimeHours
+
+These measures were calculated from ticket creation time to first response and resolution respectively.
+
+**Excel Analysis**
+
+The cleaned data was then explored in Excel to establish baseline operational insights.
+
+**SLA Performance**
+Total tickets: 3,500
+SLA breaches: 754
+Overall SLA breach rate: 21.54%
+Highest priority breach rate: P1 — 28.68%
+Highest category breach rate: Category 5 — 24.34%
+Highest channel breach rate: Phone — 23.87%
+Highest status breach rate: Escalated — 47.37%
+Response & Resolution
+Average response time: 5.06 hours
+P1 average response time: 1.18 hours
+P4 average response time: 14.24 hours
+P1 average resolution time: 5.29 hours
+P4 average resolution time: 83.44 hours
+Agent & Workload Analysis
+
+Excel was used to analyse ticket volume, agent capacity, workload pressure, roles and hubs.
+
+The workload-pressure calculation was treated as an indicator rather than true daily utilisation, because ticket counts covered the analysis period rather than necessarily one working day.
+
+**Hub & Client Analysis**
+
+The analysis also examined workload by hub and client-level SLA performance.
+
+Highest hub workload: Manchester — 1,346 tickets
+Highest identified client SLA breach rate: Marshfield Health Associates — 33.33%
+Excel Techniques Used
+
+The analysis used:
+
+XLOOKUP for agent and client information
+PivotTables for grouped analysis and percentages
+SUMIF for hub-level totals
+UNIQUE for distinct hub lists
+SORTBY for workload rankings
+Calculated SLA breach rates
+Date grouping by year, quarter and month
+
+These calculations created an audit trail from the cleaned dataset to the operational insights later reproduced in SQL and visualised in Power BI.
+
+Data Flow
+Raw Healthcare Data
+        ↓
+Excel
+        ↓
+Power Query — Cleaning & Validation
+        ↓
+Excel — Exploratory Analysis
+        ↓
+SQL
+        ↓
+Power BI — 9 Interactive Dashboards
+Tools Used
+
+Excel | Power Query
+
+**Repository Description**
+
+Excel and Power Query analysis of a healthcare service-ticket dataset, covering data cleaning, validation, SLA performance, response and resolution times, agent workload, hub workload and client analysis before the SQL and Power BI stages.
+
 ## Stream Wave Project Overview
 
 This project focused on analysing streaming content engagement and subscriber retention using Excel. The analysis examined viewing behaviour across different genres to understand which types of content generated the highest engagement, repeat viewership, and subscriber retention.
